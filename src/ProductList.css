@@ -250,3 +250,38 @@ body {
         text-align: center; /* Align text to the center */
       }
   }
+
+
+
+  
+  /* Ajoutez ces styles à votre fichier ProductList.css existant */
+
+.product-description {
+    margin: 10px 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    min-height: 60px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px; /* Hauteur fixe pour uniformiser les cartes */
+}
+
+.product-image {
+    object-fit: cover; /* Pour que les images gardent leurs proportions */
+    border-radius: 5px;
+}
+
+/* Styles pour le bouton désactivé */
+.product-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.product-button:disabled:hover {
+    background-color: #cccccc;
+}
