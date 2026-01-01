@@ -318,3 +318,70 @@ body {
     animation: fadeInOut 3s ease-in-out;
     z-index: 1000;
 }
+
+
+/* Styles pour le badge de quantité du panier */
+.cart-quantity-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4081;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Position relative pour le conteneur de l'icône du panier */
+.cart {
+  position: relative;
+}
+
+/* Styles pour la notification d'ajout */
+.added-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Styles pour les boutons du panier */
+.cart-item-button-inc {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.cart-item-button-dec {
+  background-color: #f44336;
+  color: white;
+}
+
+.cart-item-button-inc:hover {
+  background-color: #45a049;
+}
+
+.cart-item-button-dec:hover {
+  background-color: #d32f2f;
+}
