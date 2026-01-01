@@ -9,6 +9,7 @@ function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
     const [addedToCart, setAddedToCart] = useState({});
     const dispatch = useDispatch();
+    
 
      const plantsArray = [
         {
@@ -346,10 +347,10 @@ function ProductList({ onHomeClick }) {
                                         </div>
                                         <button
                                             className={`product-button ${addedToCart[plant.name] ? 'added-to-cart' : ''}`}
-                                            onClick={() => handleAddToCart(plant)}
+                                            onClick={() => handleAddToCart(plant, categoryObj.category)}
                                             disabled={addedToCart[plant.name]}
                                         >
-                                            {addedToCart[plant.name] ? 'Added to Cart' : 'Add to Cart'}
+                                            {addedToCart[plant.name] ? '✓ Added to Cart' : 'Add to Cart'}
                                         </button>
                                     </div>
                                 ))}
